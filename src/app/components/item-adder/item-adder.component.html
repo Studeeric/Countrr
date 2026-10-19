@@ -1,0 +1,2 @@
+<input type="text" placeholder="Add an item..." [value]="value()" (input)="value.set($any($event.target).value)" (keyup.enter)="onAddItem()"/>
+<button (click)="onAddItem()">+</button>

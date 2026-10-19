@@ -1,0 +1,19 @@
+<div class="page">
+  <div class="title">
+    <h1>Countrr</h1>
+    <h2>The local count tracker.</h2>
+  </div>
+  <countrr-item-adder (itemAdded)="addItem($event)" />
+  @if (!itemManager.isLoading()) {
+    <div class="itemslist">
+      @for (item of itemManager.trackedItems(); track $index) {
+        <countrr-tracked-item
+          [trackedItem]="item"
+          (incrementTrackedItem)="incrementItem($event)"
+          (decrementTrackedItem)="decrementItem($event)"
+          (deleteTrackedItem)="deleteItem($event)"
+        />
+      }
+    </div>
+  }
+</div>

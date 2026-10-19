@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "tracker": {
+    "countrr": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tracker:build:production"
+              "buildTarget": "countrr:build:production"
             },
             "development": {
-              "buildTarget": "tracker:build:development"
+              "buildTarget": "countrr:build:development"
             }
           },
           "defaultConfiguration": "development"

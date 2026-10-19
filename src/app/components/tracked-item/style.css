@@ -1,0 +1,54 @@
+.item-container {
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 25rem;
+    
+    padding: .5rem 2rem;
+    margin: .5rem;
+
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+.item-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+}
+
+.item-amount-container {
+    display: flex;
+    align-items: center;
+}
+
+.item-amount {
+    flex-shrink: 0;
+    padding: 0 1rem;
+    min-width: .5rem;
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 5rem;
+    margin: 0 .5rem;
+    flex-shrink: 1;
+}
