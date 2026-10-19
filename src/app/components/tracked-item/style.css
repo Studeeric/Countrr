@@ -1,7 +1,8 @@
 .item-container {
     border-width: 2px;
-    border-style: groove;
+    border-style: solid;
     border-radius: 25rem;
+    border-color: rgb(235, 98, 0);
     
     padding: .5rem 2rem;
     margin: .5rem;
