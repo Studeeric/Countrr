@@ -1,55 +1,54 @@
-.item-container {
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 25rem;
-    border-color: rgb(235, 98, 0);
-    
-    padding: .5rem 2rem;
-    margin: .5rem;
-
-    max-width: 100%;
-
+.item-pill {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
+
+    border: 2px orange solid;
+    border-radius: 25rem;
+
+
+    background-color: aliceblue;
 }
 
 .item-data {
+    flex-grow: 1;
+    border-radius: 25rem 0 0 25rem;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 90%;
 
 
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    flex-shrink: 0;
+    background-color: aqua;
 }
 
-.item-name {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-shrink: 1;
-}
-
-.item-amount-container {
+.item-buttons {
+    border-radius: 0 25rem 25rem 0;
     display: flex;
-    align-items: center;
+
+    background-color: rebeccapurple;
 }
 
-.item-amount {
-    flex-shrink: 0;
-    padding: 0 1rem;
-    min-width: .5rem;
-}
-
-.container-buttons {
+.modifiers {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 5rem;
-    margin: 0 .5rem;
-    flex-shrink: 1;
+    flex-direction: column;
+
+}
+
+.increment {
+    background-color: green;
+}
+
+.decrement {
+    background-color: brown;
+}
+
+.delete-button {
+    border-radius: inherit;
+
+    background-color: red;
+}
+
+button {
+    border-style: none;
+    padding: 0 .25rem;
 }

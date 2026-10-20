@@ -1,14 +1,13 @@
-<div class="item-container">
+<div class="item-pill">
   <div class="item-data">
-    <p class="item-name">{{ trackedItem().name }}</p>
-    <div class="item-amount-container">
-      <p>-</p>
-      <p class="item-amount">{{ trackedItem().amount }}</p>
-    </div>
+    <p class="">{{ trackedItem().name }}</p>
+    <p class="">{{ trackedItem().amount }}</p>
   </div>
-  <div class="container-buttons">
-    <button (click)="decrementTrackedItem.emit(trackedItem())">-</button>
-    <button (click)="incrementTrackedItem.emit(trackedItem())">+</button>
-    <button (click)="deleteTrackedItem.emit(trackedItem())">x</button>
+  <div class="item-buttons">
+    <div class="modifiers">
+      <button class="increment" (click)="incrementTrackedItem.emit(trackedItem())">+</button>
+      <button class="decrement" (click)="decrementTrackedItem.emit(trackedItem())">-</button>
+    </div>
+    <button class="delete-button" (click)="deleteTrackedItem.emit(trackedItem())">x</button>
   </div>
 </div>
